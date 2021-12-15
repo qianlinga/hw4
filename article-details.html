@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Corso - Training Course Landing Page Template</title>
+    <title>Article Details - Corso</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
@@ -26,8 +26,9 @@
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="my.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+     <link href="my.css" rel="stylesheet">
+	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
@@ -51,7 +52,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,15 +64,15 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#register">REGISTER <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="index.html#register">REGISTER <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#description">DETAILS</a>
+                    <a class="nav-link page-scroll" href="index.html#description">DETAILS</a>
                 </li>
 
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
                         <div class="dropdown-divider"></div>
@@ -83,7 +84,7 @@
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                    <a class="nav-link page-scroll" href="index.html#contact">CONTACT</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
@@ -103,76 +104,87 @@
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
-    <br><br><br><br><br><br><br><br><br>
-<div class="lab1">
-    <h1>Lab 1</h1>
-    Please fill out this form to help us improve our site.
-    
-    <form><label>Name:
-        <input name = "name" type="text" size="25" maxlength="30"></label>
+<br><br><br><br><br><br><br><br>
+<table border="1" class="hw2">
+            
+       <thead>
+        <td colspan="3" align="center"><h3>About--110306056</h3></td>
+        </thead>
+        <tr>
+         <td rowspan="3"><img src="cat.jpg" width="100" height="80">
+            <br><li>personal photo</br>
+        <td colspan="2">
+            <form>Name:<input type="text" name="name" size="25" maxlength="50">
+            <br>
+            <form>Gender
+                <input type="radio" name="gender" value="Male" >Male
+                <input type="radio" name="gender" value="Female" ><span>Female</span>
+                <input type="radio" name="gender" value="Other" >Other
+            </br></td>
+            <tr><td><li><ul>Country:</ul></li>
+                <form action="/action_page.php">
+                <select name="Country">
+                <option value="Taipei">Taipei</option>
+                <option value="Tainan">Tainan</option>
+                <option value="Taichung">Taichung</option>
+                <option value="Taoyuan">Taoyuan</option>
+                </select>
 
-        <p><code><textarea rows="5" cols="50">
-Enter comments here.
-        </textarea></code></p>
-<label>E-mail Address:
-    <input type="text" name="E-mail" size="10" maxlength="30"></label>
-<br>
+            </td>
+            <td><form><h4>Birthday:</h4>
+                <input type="date" name="birthday">
+            
+                
+            </td>
+            <tr><td colspan="2">
+                <ul>Email:</ul>
+                <input type="text" name="email" size="25
+                " maxlength="50">
+            </td>
+                
+            </tr>
+            <tr><td colspan="1" ><li>Hobby</li></td><td colspan="2">            
+                <form action="action_page.php" method="get">
+                <input type="checkbox" name="hobby" value="swimming">Swimming
+                <input type="checkbox" name="hobby" value="volleyball">Volleyball
+                <input type="checkbox" name="hobby" value="movie">Movie
+                <input type="checkbox" name="hobby" value="Game">Game
+                <input type="checkbox" name="hobby" value="Sleep">Sleep</td></tr>
+            <tr><td >Skill</td>
+
+                <td colspan="2">
+                <form action="action_page.php" method="get">
+                <input type="checkbox" name="skill" value="Java"><span>Java</span>
+                <input type="checkbox" name="skill" value="HTML">HTML
+                <input type="checkbox" name="skill" value="Python"><li>Python</li>
+                <input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office
+                <input type="checkbox" name="skill" value="Premiere">Premiere
+                </td></tr>
+            <tr><td>Say Something</td>
+                <td colspan="2">
+                    <input type="text" name="saysomething" size="50" maxlength="100" placeholder="Say something here.">
+                </td></tr>
+                <tr><td colspan="3">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </form>
+                </tr></td>
 
 
-    Things you liked:
-<form action="action_page.php" method="get">
-    <input type="checkbox" name="Things" value="Site design">Site design
-<input type="checkbox" name="Things" value="Links">Links
-<input type="checkbox" name="Things" value="Ease of use">Ease of use
-<input type="checkbox" name="Things" value="Images">Images
-<input type="checkbox" name="Things" value="Source code">Source code
-<br>
-How did you get to our site?:<br>
-    <form>
-        <input type="radio" name="how" value="Search engine">Search engine
-        <input type="radio" name="how" value="Links">Links from another site
-        <input type="radio" name="how" value="web site">Deitel.com Web site
-        <input type="radio" name="how" value="book">Reference in a book
-        <input type="radio" name="how" value="others">Others
-<br>
-Rate our site:
-<form action="/action_page.php">
-<select name="Rate">
-<option value="Amazing">Amazing</option>
-<option value="Well">Well</option>
-<option value="Good">Good</option>
-<option value="Soso">Soso</option>
-</select>
-<br>
-
-<input type="submit" value="Submit" >
-<input type="reset" name="Clear">
- </form>
- </div>
-
-
- 
-
-
-        <div class="lab2">
-    
-    <h1>Lab 2</h1>
-
-    <h1>Deitel & Associates, Inc.</h1>
-    <h3>Deitel & Associates, Inc.is an authoring and corporatetraining </h3>organizationspecializing in programming languages.
-    <br>
-        <a>Clients</a>
         
-        <h4>The company's clients include many Fortune 1000 companies,branches of the millitary and business organizations.</h4>
-        
+    </tr>
 
-    </div>
-
-
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  
+</table>
 
 
+<div id="background_image">
+    <img src="hamburger.png" width="100px" class="foreground_image">
+    
+
+</div>
+
+   
+    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
